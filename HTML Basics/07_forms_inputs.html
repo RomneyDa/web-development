@@ -1,0 +1,76 @@
+<!-- FORMS AND INPUTS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <!-- FORM to group elements to be sent to backend processer -->
+    <form action="process.php">
+        <!-- TEXT INPUT -->
+        <div>
+            <label for="name">Name</label><br>
+            <!-- id is used to link elements on the front end, name is used to grab values on the back end -->
+            <input type="text" id="name" name="name" value="Dallin Romney">
+            <!-- Note that value attribute can be used for a default value -->
+        </div>
+        <!-- EMAIL INPUT -->
+        <div>
+            <label for="name">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            <!-- Note that the placeholder attribute can be used for most inputs and adds greyed placeholder text -->
+        </div>
+        <!-- TEXT AREA -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" cols="50" rows="5"></textarea>
+        </div>
+        <!-- DROPDOWN "Select" LIST -->
+        <div>
+            <label for="sex">Sex</label>
+            <select id="sex" name="sex">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <!-- Note that the selected attribute selects that one by default -->
+            </select>
+        </div>
+        <!-- NUMBER INPUT -->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <!-- DATE INPUT -->
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <!-- CHECK BOXES -->
+        <div>
+            <label for="likes">likes</label><br>
+            <input type="checkbox" name="likes" id="likes" value="bike">bike<br>
+            <input type="checkbox" name="likes" id="likes" value="car" checked>car<br>
+            <input type="checkbox" name="likes" id="likes" value="boat">boat<br>
+            <!-- Note that the checked attribute sets it to checked by default -->
+            <!-- Also note that the VALUE attribute is what is actually sent to the server -->
+        </div>
+        <!-- RESET BUTTON resets the form to default values -->
+        <div>
+            <button type="reset">Reset</button>
+        </div>
+        <!-- SUBMIT BUTTONS - both of these work fine -->
+        <div>
+            <input type="submit" value = "Submit">
+        </div>
+        <!-- 
+        <div>
+            <button type="submit" value="">Submit</button>
+        </div> 
+        -->
+
+    </form>
+    
+</body>
+</html>

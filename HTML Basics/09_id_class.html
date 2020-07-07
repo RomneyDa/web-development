@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div, span, id, and class</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <h1>My Website</h1>
+        <p>Stuff about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- NOTE THAT WITH EMMETT and VSCODE, you can type in tag#id and it will automatically make it -->
+    <!-- For example, h1#head-text or even just #main-header for a div -->
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae numquam placeat corporis illum explicabo magni repudiandae dolor doloribus maxime ipsum?</p>
+    </div>
+    <div id="contact" class="card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address: 50 Main st, Boston, MA</li>
+            <li>Phone: 208-999-9999</li>
+            <li>Email: example@gmail.com</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>Copyright &copy; 2020</p>
+    </div>
+    <!-- 
+        WHEN TO USE AN ID VS A CLASS:
+        Good practice is to have only 1 element per ID but classes are fine to repeat for styling
+     -->
+     <!-- divs vs. spans: same but divs are block level and spans are inline -->
+     <div>
+         <p>Lorem <div class="enhance">ipsum dolor, sit</div> amet consectetur adipisicing elit. Sed deleniti</p>
+     </div>
+     <div>
+        <p>Lorem <span class="enhance">ipsum dolor, sit</span> amet consectetur adipisicing elit. Sed deleniti</p>
+    </div>
+    <!-- Note how the enhance div pushes down a line but the span stays inline. -->
+</body>
+</html>
