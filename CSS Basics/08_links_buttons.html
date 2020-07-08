@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Buttons</title>
+    <style>
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        /* A colon makes responsive states for events*/
+     
+        /* Note that visited overrides other colors ONCE visited */
+        .visitable:visited {
+            color: green;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        /* Button Styling */
+        .btn {
+            background: #4c6ca0;
+            color: white;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px; /* top and then bottom */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            color: #f4f4f4;
+            background: #446190
+        }
+    </style>
+</head>
+<body>
+    <a class="btn" href="#">Link</a>
+    <br>
+    <a href="#" class="visitable">Visitable link</a>
+    <br>
+    <button class="btn">My Button</button>
+
+</body>
+</html>

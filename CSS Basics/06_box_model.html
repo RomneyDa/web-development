@@ -1,0 +1,77 @@
+<!-- The Box Model has 4 layers:
+Element - Inner content
+Padding - Space between border and element
+Border - Line around padding
+Margin - Space outside border
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Margin, & Padding</title>
+    <style>
+        /* CSS Reset - the * selects EVERYTHING */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background: #f4f4f4;
+            border: 2px #888 solid;
+            width: 500px;
+
+            /* Margin on all sides */
+            margin: 4px;
+
+            /* Margin on all sides */
+            margin: 20px;
+
+            /* Margin per side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /* The more consise way to write it (top right bottom left) */
+            margin: 10px 20px 10px 20px;
+
+            /* OR even shorter is top/bottom, left/right */
+            margin: 10px 20px;
+
+            /* Padding on all sides */
+            padding: 20px;
+
+            /* Padding per side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+            /* The more consise way to write it (top right bottom left) */
+            padding: 10px 20px 10px 20px;
+
+            /* OR even shorter is top/bottom, left/right */
+            padding: 10px 20px;
+        }
+        /* Note that padding and margin add to the total width! */
+        /* ALSO PROPERTIES THAT ARE FURTHER DOWN WILL OVERWRITE PREVIOUS ONES */
+
+        .box h3 {
+            padding-bottom: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, temporibus consequuntur quasi debitis rerum quis totam quos cumque consectetur consequatur!</p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, temporibus consequuntur quasi debitis rerum quis totam quos cumque consectetur consequatur!</p>
+    </div>
+</body>
+</html>

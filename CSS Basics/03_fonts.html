@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* MAKE SURE THE FONT IS WEB SAFE or you should include the font file */
+        /* The default is Times New Roman */
+        /* Arial, Verdana, Tahoma are great */
+        body {
+            /* This is a font stack: first it looks for arial, then helvetica, and then sans-serif */
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px; /* see units below */
+            line-height: 1.6em;
+        }
+
+        /* Using google fonts: */
+        /* Go to fonts.google.com */
+        /* Choose font */
+        /* Put link tag into html OR import in css file */
+        /* I put the roboto link tag above */
+        #welcome {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Targeting elements in ids */
+        #welcome span {
+            font-weight: bold;
+        }
+
+        /* UNITS 
+
+        ABSOLUTE:
+        px = pixels = 1/96th of an inch
+        pt = points = 1/72 of an inch
+        pc = picas picas: 1 pc = 12 pt = 1/6 inch
+        cm = centimeters
+        mm = millimeters
+        in = inches
+
+        RELATIVE:
+        % = to parent element
+        em = to font-size of parent element
+        rem = to font size of root element
+            remember default is 16px
+        vw = to 1% of viewport width
+        vh = to 1% of viewport height
+
+        */
+
+    </style>
+
+</head>
+<body>
+    <div id="welcome">
+        <h2>Welcome</h2>
+        <p>Lorem <span> ipsum dolor </span> sit amet consectetur adipisicing elit. Praesentium, ipsum! Voluptate temporibus, eveniet ducimus quisquam odio nostrum nemo qui cumque.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum <span> dolor sit amet consectetur </span> adipisicing elit. Suscipit, odit? Sit quae vel voluptatem architecto quod quo.</p>
+    </div>
+</body>
+</html>

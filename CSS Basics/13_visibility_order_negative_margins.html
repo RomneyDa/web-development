@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility, Order, & Negative Margins</title>
+    <style>
+        /* Notice that targeting a class takes precedence to a tag! Even though this is above h1 the color is red */
+        .hello {
+            color: red;
+        }
+        h1 {
+            /* This hides the element completely */
+            /* display: none; */
+            /* Used more often than visibility: hidden */
+
+            /* This also hides it but it still takes up space! */
+            /* visibility: hidden */
+
+            /* However, the !important tag takes precedence over everything!!*/
+            color: blue !important;
+            margin-top:30px;
+            margin-bottom: -30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut inventore aut perferendis dicta, beatae perspiciatis maxime voluptatem aspernatur voluptatibus veniam.</p>
+
+</body>
+</html>

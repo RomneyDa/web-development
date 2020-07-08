@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        li {
+            display: inline;
+        }
+        li a {
+            padding-right: 10px;
+        }
+
+        img {
+            display: block;
+            margin: auto; /* only works on block elements!! */
+        }
+
+        .box {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+            width: 32%;
+            /* display: inline; doesn't work because isn't block */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- By default li tags are block level! But using display style can change to inline -->
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Breaking News</a></li>
+    </ul>
+
+    <!-- Images are inline by default -->
+    <img src="./img/leaf.png" alt="My Image">
+
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea illum tenetur accusamus quam at optio tempora quibusdam neque consectetur.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea illum tenetur accusamus quam at optio tempora quibusdam neque consectetur.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea illum tenetur accusamus quam at optio tempora quibusdam neque consectetur.</p>
+    </div>
+</body>
+</html>

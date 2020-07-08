@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* A # sign means id */
+        #welcome {
+            background-color: #f4f4f4;
+        }
+        /* In this case it only applies to headings with the id 'green-one' */
+        h2#green-one {
+            color: green;
+        }
+        /* But remember, id's should only be used when there's only one case */
+
+        /* A . means class */
+        .secondary_heading {
+            color: blue;
+        }
+
+        /* Multiple Selectors - comma+space */
+        #welcome, #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        
+        /* Nested Selectors - just a space */
+        #welcome p {
+            font-size: 20px;
+        }
+
+        /* tag selecting */
+        body {
+            background-color: #333;
+        }
+
+        #about {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 id="green-one">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsum! Voluptate temporibus, eveniet ducimus quisquam odio nostrum nemo qui cumque.</p>
+    </div>
+    <div id="about">
+        <h2 class="secondary_heading">About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, odit? Sit quae vel voluptatem architecto quod quo.</p>
+    </div>
+</body>
+</html>
